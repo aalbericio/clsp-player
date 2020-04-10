@@ -1,0 +1,24 @@
+{
+  "name": "@kapsch/clsp-player",
+  "version": "0.0.1",
+  "description": "CLSP player",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalbericio/clsp-player.git"
+  },
+  "author": "Kapsch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aalbericio/clsp-player/issues"
+  },
+  "homepage": "https://github.com/aalbericio/clsp-player#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "lodash": "^4.17.15",
+    "paho-mqtt": "^1.1.0"
+  }
+}
