@@ -1,12 +1,10 @@
 'use strict';
 
-import {
-  version,
-} from '~root/package.json';
 import Logger from '../utils/logger';
 
 const PLUGIN_NAME = 'clsp';
 const MINIMUM_CHROME_VERSION = 52;
+const version = '0.0.1';
 
 // @todo - this mime type, though used in the videojs plugin, and
 // seemingly enforced, is not actually enforced.  The only enforcement

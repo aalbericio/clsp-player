@@ -1,13 +1,19 @@
 {
   "name": "@kapsch/clsp-player",
-  "version": "0.0.1",
+  "version": "0.0.2-beta.8",
   "description": "CLSP player",
   "main": "lib/index.js",
   "babel": {
-    "plugins": ["@babel/plugin-proposal-class-properties"]
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   },
   "scripts": {
     "build": "babel src --out-dir lib",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,8 +28,11 @@
   "homepage": "https://github.com/aalbericio/clsp-player#readme",
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
+    "debug": "^4.1.1",
     "lodash": "^4.17.15",
-    "paho-mqtt": "^1.1.0"
+    "paho-mqtt": "^1.1.0",
+    "srcdoc-polyfill": "^1.0.0",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

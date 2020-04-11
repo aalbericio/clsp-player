@@ -5,21 +5,26 @@
  */
 
 import 'srcdoc-polyfill';
+import IovCollection from './iov/IovCollection';
+// import TourController from './iov/TourController';
+import utils from './utils/utils';
 
 // import '../styles/clsp-player.scss';
 
-import IovCollection from './iov/IovCollection';
-import TourController from './iov/TourController';
-import utils from './utils/utils';
-
 window.IovCollection = IovCollection;
-window.TourController = TourController;
+// window.TourController = TourController;
 
 if (!window.clspUtils) {
   window.clspUtils = utils;
 }
 
+/*
 export default {
   IovCollection,
   TourController,
 };
+ */
+
+// const IovCollection = require('./iov/IovCollection');
+
+module.exports = require('./iov/IovCollection');
