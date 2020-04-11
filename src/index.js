@@ -6,7 +6,7 @@
 
 import 'srcdoc-polyfill';
 
-import '../styles/clsp-player.scss';
+// import '../styles/clsp-player.scss';
 
 import IovCollection from './iov/IovCollection';
 import TourController from './iov/TourController';

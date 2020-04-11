@@ -2,8 +2,12 @@
   "name": "@kapsch/clsp-player",
   "version": "0.0.1",
   "description": "CLSP player",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "babel": {
+    "plugins": ["@babel/plugin-proposal-class-properties"]
+  },
   "scripts": {
+    "build": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +24,12 @@
     "@babel/polyfill": "^7.8.7",
     "lodash": "^4.17.15",
     "paho-mqtt": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5"
   }
 }
