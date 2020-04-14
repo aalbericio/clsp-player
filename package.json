@@ -1,6 +1,6 @@
 {
   "name": "@kapsch/clsp-player",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLSP player",
   "main": "lib/index.js",
   "babel": {
@@ -44,7 +44,6 @@
     "@babel/preset-env": "^7.9.5",
     "rimraf": "^3.0.2",
     "cross-env": "^7.0.2",
-    "rimraf": "^3.0.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
