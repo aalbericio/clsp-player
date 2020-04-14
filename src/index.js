@@ -1,11 +1,7 @@
 import IovCollection from './iov/IovCollection';
-
-function sayHello() {
-    console.log('Hello!');
-}
+import Iov from './iov/Iov';
 
 export {
+    Iov,
     IovCollection
 }
-
-export { sayHello };

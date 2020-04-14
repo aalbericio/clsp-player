@@ -1,18 +1,9 @@
-export function sayHello(): void;
-
-export class IovCollection {
-    constructor();
-    
-    create(videoElementId);
-    
-    add(iov);
-    
-    has(id);
-    
-    get (id);
-    
-    remove (id);
-    
-    destroy ();
+export class Iov {
+    play: (iovPlayer?: any) => any;
+    changeSrc: (url: string, showOnFirstFrame?: boolean) => any;
 }
 
+export class IovCollection {
+    static asSingleton: () => IovCollection;
+    create: (videoElementId: string) => Promise<Iov>;
+}
