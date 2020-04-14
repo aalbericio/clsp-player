@@ -12,9 +12,11 @@
     ]
   },
   "scripts": {
-    "clean": "rimraf lib",
+    "clean": "rimraf lib dist",
     "build:commonjs": "babel src --out-dir lib",
-    "build": "npm run clean && npm run build:commonjs",
+    "build:umd": "cross-env FILE_NAME=clsp-player webpack",
+    "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
+    "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min",
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,7 +31,6 @@
   },
   "homepage": "https://github.com/aalbericio/clsp-player#readme",
   "dependencies": {
-    "@babel/polyfill": "^7.8.7",
     "debug": "^4.1.1",
     "lodash": "^4.17.15",
     "paho-mqtt": "^1.1.0",
@@ -41,9 +42,10 @@
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/polyfill": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
-    "rimraf": "^3.0.2",
     "cross-env": "^7.0.2",
+    "rimraf": "^3.0.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
