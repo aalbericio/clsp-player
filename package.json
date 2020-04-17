@@ -1,6 +1,6 @@
 {
   "name": "@kapsch/clsp-player",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "CLSP player",
   "main": "lib/index.js",
   "scripts": {
